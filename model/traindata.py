@@ -17,7 +17,6 @@ y = np.array([
     [1,1,1,1,1,1],
     [1,1,1,1,1,1],
     [1,1,1,1,1,1]
-
 ])
 
 train_data = tf.data.Dataset.from_tensor_slices((

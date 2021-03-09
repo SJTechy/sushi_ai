@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
-from data import train_data
+from traindata import train_data
 
 
 model = keras.Sequential([
