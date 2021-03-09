@@ -13,8 +13,9 @@ model = keras.Sequential([
 
 loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
 
-model.compile(optimizer='adam',
-              loss=loss_fn,
-              metrics=['accuracy'])
+if __name__ == '__main__':
+    model.compile(optimizer='adam',
+                loss=loss_fn,
+                metrics=['accuracy'])
 
-model.fit(train_data, epochs=50)
+    model.fit(train_data, epochs=50)
